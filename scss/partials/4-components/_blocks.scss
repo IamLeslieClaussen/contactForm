@@ -1,0 +1,170 @@
+.container {
+  width: 343px;
+  height: 1074px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 24px;
+
+  @include tablet {
+    width: 690px;
+    height: 800px;
+  }
+
+  @include large {
+    width: 1440px;
+    height: 1029px;
+  }
+}
+
+.container__content__form {
+  @include tablet {
+    width: 610px;
+  }
+
+  @include large {
+    width: 656px;
+  }
+}
+
+h1 {
+  margin-bottom: 32px;
+}
+
+.container__content__form__input__group {
+  input {
+    width: auto;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+.container__content__form__input__group {
+  label {
+    margin-bottom: 10px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+    &:hover {
+      border-color: green;
+    }
+  }
+}
+
+.query-group {
+  .query-type {
+    padding: 5px;
+    min-width: auto;
+    height: 51px;
+    margin-bottom: 16px;
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    width: 100%;
+
+    input[type="radio"] {
+      appearance: none;
+      width: 0.5rem;
+      height: 0.5rem;
+      outline: 2px solid green;
+      border-radius: 50%;
+      outline-offset: 3px;
+      cursor: pointer;
+    }
+
+    input[type="radio"]:checked {
+      background-color: green;
+    }
+  }
+
+  label {
+    margin-left: 10px;
+  }
+}
+
+.query-group {
+  margin-top: 16px; /* Adjust the value as needed */
+}
+
+.container__content__form__group.message textarea {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  height: 200px;
+  cursor: pointer;
+  padding: 10px;
+
+  @include tablet {
+    height: 150px;
+  }
+
+  @include large {
+    height: auto;
+  }
+}
+
+.container__content__form__input__group {
+  margin-bottom: 20px;
+}
+
+.container__content__form__group.radio {
+  margin-bottom: 40px;
+}
+
+button {
+  margin-top: 40px;
+  width: 100%;
+  height: 59px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+#consent {
+  margin-right: 15px;
+}
+
+.container__content__form__group.checkbox input[type="checkbox"],
+.container__content__form__group.checkbox label {
+  cursor: pointer;
+}
+
+.container__content__form__group.checkbox input[type="checkbox"]:checked {
+  accent-color: green;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 327px;
+  height: 131px;
+  position: absolute;
+  top: 0px;
+
+  p {
+    margin-top: 1rem;
+  }
+
+  @include tablet {
+    width: 450px;
+  }
+}

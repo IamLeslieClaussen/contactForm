@@ -1,0 +1,18 @@
+.container__content__form__input__group {
+  display: grid;
+}
+
+.container__content__form__input {
+  display: grid;
+  column-gap: 10px;
+
+  @include tablet {
+    grid-template-areas:
+      "A B"
+      "C C";
+
+    .email {
+      grid-area: C;
+    }
+  }
+}

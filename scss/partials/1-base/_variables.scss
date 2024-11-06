@@ -1,0 +1,28 @@
+/*******COLORS********/
+
+/**primary**/
+
+$primary-tomato: hsl(4, 100%, 67%);
+
+/**Neutral**/
+$neutral-dark-dark-slate-grey: hsl(234, 29%, 20%);
+$neutral-charcoal-grey: hsl(235, 18%, 26%);
+$neutral-grey: hsl(231, 7%, 60%);
+$neutral-white: hsl(0, 0%, 100%);
+
+/*font-size*/
+$f-normal: 16px;
+$f-large: 40px;
+
+/*font-weight*/
+$fw-light: 300;
+$fw-light-1: 400;
+$fw-medium: 600;
+$fw-heavy: 700;
+
+/*Media queries*/
+$tablet: 768px;
+$large: 1024px;
+$desktop: 1280px;
+
+$ff-karla-Sans: "karla", sans-serif;

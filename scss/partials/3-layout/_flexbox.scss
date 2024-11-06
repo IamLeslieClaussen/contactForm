@@ -1,0 +1,12 @@
+.query-group {
+  @include tablet {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}

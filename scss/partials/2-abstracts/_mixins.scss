@@ -1,0 +1,49 @@
+@mixin linear-gradient($degrees, $color1, $color2) {
+  background-image: linear-gradient($degrees, $color1, $color2);
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+/******Media Queries********/
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin cover-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

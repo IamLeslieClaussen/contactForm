@@ -1,0 +1,278 @@
+/*******COLORS********/
+/**primary**/
+/**Neutral**/
+/*font-size*/
+/*font-weight*/
+/*Media queries*/
+body {
+  background-color: white;
+  font-family: "karla";
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@font-face {
+  font-family: karla;
+  src: url(/assets/fonts/Karla-VariableFont_wght.ttf);
+}
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+/******Media Queries********/
+@media only screen and (min-width: 768px) {
+  .query-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__content__form__input__group {
+  display: grid;
+}
+
+.container__content__form__input {
+  display: grid;
+  column-gap: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .container__content__form__input {
+    grid-template-areas: "A B" "C C";
+  }
+  .container__content__form__input .email {
+    grid-area: C;
+  }
+}
+
+.container {
+  width: 343px;
+  height: 1074px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 24px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 690px;
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 1440px;
+    height: 1029px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container__content__form {
+    width: 610px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container__content__form {
+    width: 656px;
+  }
+}
+
+h1 {
+  margin-bottom: 32px;
+}
+
+.container__content__form__input__group input {
+  width: auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container__content__form__input__group label {
+  margin-bottom: 10px;
+}
+.container__content__form__input__group input {
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.container__content__form__input__group input:hover {
+  border-color: green;
+}
+
+.query-group .query-type {
+  padding: 5px;
+  min-width: auto;
+  height: 51px;
+  margin-bottom: 16px;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  width: 100%;
+}
+.query-group .query-type input[type=radio] {
+  appearance: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  outline: 2px solid green;
+  border-radius: 50%;
+  outline-offset: 3px;
+  cursor: pointer;
+}
+.query-group .query-type input[type=radio]:checked {
+  background-color: green;
+}
+.query-group label {
+  margin-left: 10px;
+}
+
+.query-group {
+  margin-top: 16px; /* Adjust the value as needed */
+}
+
+.container__content__form__group.message textarea {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  height: 200px;
+  cursor: pointer;
+  padding: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .container__content__form__group.message textarea {
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container__content__form__group.message textarea {
+    height: auto;
+  }
+}
+
+.container__content__form__input__group {
+  margin-bottom: 20px;
+}
+
+.container__content__form__group.radio {
+  margin-bottom: 40px;
+}
+
+button {
+  margin-top: 40px;
+  width: 100%;
+  height: 59px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: black;
+}
+
+#consent {
+  margin-right: 15px;
+}
+
+.container__content__form__group.checkbox input[type=checkbox],
+.container__content__form__group.checkbox label {
+  cursor: pointer;
+}
+
+.container__content__form__group.checkbox input[type=checkbox]:checked {
+  accent-color: green;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 327px;
+  height: 131px;
+  position: absolute;
+  top: 0px;
+}
+.success-message p {
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .success-message {
+    width: 450px;
+  }
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.error.hidden {
+  display: none;
+}
+
+.success-message.hidden {
+  display: none;
+}
